@@ -1,0 +1,14 @@
+{
+	"name": "todo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./client/src/index.js",
+	"scripts": {
+		"build": "if-env TYPE==server && (cd server && npm install) || (cd client && npm install)",
+		"server": "cd server && npm run start",
+		"client": "cd client && npm start"
+	},
+	"dependencies": {
+		"if-env": "^1.0.4"
+	}
+}
